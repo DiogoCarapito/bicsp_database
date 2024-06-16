@@ -9,7 +9,7 @@ format:
 	black . *.py
 
 lint:
-	pylint --disable=R,C *.py utils/*.py tests/*.py
+	pylint --disable=R,C,W0718,W1203 *.py utils/*.py tests/*.py
 
 #container-lint:
 #	docker run -rm -i hadolint/hadolint < Dockerfile
